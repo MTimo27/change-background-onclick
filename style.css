@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body,
+.container {
+  height: 100%;
+}
+
+div.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1.title {
+  font-size: 25px;
+}
+
+button.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #0080ff;
+}
+
+button.button:hover {
+  color: #0080ff;
+  border-color: currentColor;
+  background-color: white;
+  cursor: pointer;
+}
