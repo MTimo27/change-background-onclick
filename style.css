@@ -21,6 +21,10 @@ h1.title {
   font-size: 25px;
 }
 
+.clicked {
+  color: darkblue;
+}
+
 button.button {
   display: inline-block;
   text-align: center;

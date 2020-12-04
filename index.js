@@ -9,10 +9,19 @@ let colors = [
 ]
 
 let colorsLenght = colors.length
-
 let i = -1
+let buttonClicks = 0
+let title = document.getElementById("firstTitle")
 
 function changeColor() {
+  buttonClicks++
+
+  if (buttonClicks === 1)
+    title.textContent = `Yay you pressed the button ${buttonClicks} time`
+  else
+    title.textContent = `Yay you pressed the button ${buttonClicks} times`
+
+  title.classList.add("clicked")
   i++
   if (i < colorsLenght) {
     document.getElementById("body").style.backgroundImage =
